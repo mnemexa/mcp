@@ -45,7 +45,7 @@
 
   <!-- Brand wordmark -->
   <text x="450" y="135" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="48" font-weight="600" letter-spacing="-1">
-    <tspan fill="#38BDF8">Biz</tspan><tspan fill="#ffffff">X</tspan><tspan fill="#999999">Engine</tspan>
+    <tspan fill="#38BDF8">Mne</tspan><tspan fill="#ffffff">m</tspan><tspan fill="#9CA3AF">exa</tspan>
     <tspan fill="#ffffff" dx="14" font-weight="400" font-size="34" opacity="0.5">MCP</tspan>
   </text>
 
@@ -70,6 +70,6 @@
 
   <!-- Version badge bottom -->
   <text x="450" y="290" text-anchor="middle" font-family="monospace" font-size="11" fill="#ffffff" opacity="0.2">
-    npm install @bizxengine/mcp
+    npm install @mnemexa/mcp
   </text>
 </svg>
