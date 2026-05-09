@@ -189,13 +189,13 @@ Same API key = same workspace = **shared intelligence.**
 
 ```bash
 # Agent 1 — your machine
-npx @mnemexa/mcp --install bxk_workspace_key
+npx @mnemexa/mcp --install mnx_workspace_key
 
 # Agent 2 — teammate's machine
-npx @mnemexa/mcp --install bxk_workspace_key
+npx @mnemexa/mcp --install mnx_workspace_key
 
 # Agent 3 — CI / automation
-npx @mnemexa/mcp --install bxk_workspace_key
+npx @mnemexa/mcp --install mnx_workspace_key
 ```
 
 One agent learns a client prefers morning meetings. Every other agent on the workspace knows it immediately. No Slack messages. No copy-pasting context. No documentation you'll forget to update.
@@ -327,7 +327,7 @@ npx @mnemexa/mcp
 **Manual:**
 
 ```bash
-claude mcp add mnemexa npx @mnemexa/mcp -- --api-key bxk_your_key_here
+claude mcp add mnemexa npx @mnemexa/mcp -- --api-key mnx_your_key_here
 ```
 
 Or add directly to `~/.claude.json`:
@@ -339,7 +339,7 @@ Or add directly to `~/.claude.json`:
       "command": "npx",
       "args": ["-y", "@mnemexa/mcp"],
       "env": {
-        "MNEMEXA_API_KEY": "bxk_your_key_here"
+        "MNEMEXA_API_KEY": "mnx_your_key_here"
       }
     }
   }
@@ -371,7 +371,7 @@ npx @mnemexa/mcp
       "command": "npx",
       "args": ["-y", "@mnemexa/mcp"],
       "env": {
-        "MNEMEXA_API_KEY": "bxk_your_key_here"
+        "MNEMEXA_API_KEY": "mnx_your_key_here"
       }
     }
   }
@@ -399,7 +399,7 @@ npx @mnemexa/mcp
       "command": "npx",
       "args": ["-y", "@mnemexa/mcp"],
       "env": {
-        "MNEMEXA_API_KEY": "bxk_your_key_here"
+        "MNEMEXA_API_KEY": "mnx_your_key_here"
       }
     }
   }
@@ -427,7 +427,7 @@ npx @mnemexa/mcp
       "command": "npx",
       "args": ["-y", "@mnemexa/mcp"],
       "env": {
-        "MNEMEXA_API_KEY": "bxk_your_key_here"
+        "MNEMEXA_API_KEY": "mnx_your_key_here"
       }
     }
   }
@@ -447,7 +447,7 @@ npx @mnemexa/mcp
       "command": "npx",
       "args": ["-y", "@mnemexa/mcp"],
       "env": {
-        "MNEMEXA_API_KEY": "bxk_your_key_here"
+        "MNEMEXA_API_KEY": "mnx_your_key_here"
       }
     }
   }
@@ -478,7 +478,7 @@ Mnemexa replaces that with **shared workspace memory**. Every agent in your Open
         "command": "npx",
         "args": ["-y", "@mnemexa/mcp"],
         "env": {
-          "MNEMEXA_API_KEY": "bxk_your_key_here"
+          "MNEMEXA_API_KEY": "mnx_your_key_here"
         }
       }
     }
