@@ -64,7 +64,6 @@ Once installed, your AI agent:
 
 - **Remembers** preferences, decisions, and project context across every conversation
 - **Recalls** relevant facts before answering — without being told to look
-- **Reasons** across your entire memory store to synthesize answers
 - **Shares memory** with other agents on the same workspace in real time
 - **Self-optimizes** — importance scoring, deduplication, and temporal decay happen automatically in the cloud
 
@@ -143,7 +142,7 @@ That's it. Your AI now has persistent, self-optimizing memory.
 
 <br/>
 
-This package is a **thin stdio adapter** — roughly 1,200 lines of TypeScript with no business logic. All intelligence (scoring, deduplication, decay, reasoning) runs in Mnemexa's cloud. The adapter's only jobs are: resolve the API key, translate MCP tool calls into REST requests, and return formatted results.
+This package is a **thin stdio adapter** — roughly 1,200 lines of TypeScript with no business logic. All intelligence (scoring, deduplication, decay) runs in Mnemexa's cloud. The adapter's only jobs are: resolve the API key, translate MCP tool calls into REST requests, and return formatted results.
 
 <br/>
 
@@ -159,7 +158,6 @@ Your AI gets these capabilities out of the box:
 |:-----|:-------------|
 | `brain.remember` | Save important information — auto-scored for importance, deduplicated, categorized |
 | `brain.recall` | Semantic search over your memory store — returns ranked, scored results |
-| `brain.answer` | LLM reasoning across multiple memories — synthesizes a direct answer |
 | `brain.health` | Memory quality report — health score, total count, stale signals |
 | `brain.status` | Live connection check — confirms the workspace is reachable |
 
