@@ -2,6 +2,11 @@
 
 All notable changes to `@mnemexa/mcp` are documented here. This project follows [Semantic Versioning](https://semver.org/).
 
+## [2.0.4] — 2026-05-15
+
+### Fixed
+- `brain.health` now reads the correct response fields from `GET /v1/optimize/health`. Previously it looked for top-level `health_score` / `total_memories` / `stale_count`, but the backend returns `quality_score` (top-level) and the counts under `signals.*`. Result was a "Memory Health Report" that always displayed `Health Score: 0.0%`, `Total Memories: 0`, `Stale Memories: 0` regardless of actual workspace state. Bug present since the public health endpoint shipped in 2.0.2. Now reports `quality_score` on a 0–100 scale plus full signal breakdown (stale, duplicates, overlong, never-retrieved, open recommendations).
+
 ## [2.0.3] — 2026-05-15
 
 ### Changed

@@ -1,6 +1,6 @@
 {
   "name": "@mnemexa/mcp",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "MCP server adapter for Mnemexa — the Intelligent Memory OS for AI. Exposes memory store, recall, and health tools over STDIO.",
   "type": "module",
   "main": "dist/index.js",
