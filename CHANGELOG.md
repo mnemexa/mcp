@@ -2,6 +2,11 @@
 
 All notable changes to `@mnemexa/mcp` are documented here. This project follows [Semantic Versioning](https://semver.org/).
 
+## [2.0.3] — 2026-05-15
+
+### Changed
+- `brain.status` now calls the new public `GET /v1/status` endpoint and returns the real workspace name, status, plan, billing cycle, and API-key prefix. Previously it returned a hardcoded "connected" message that didn't verify anything against the backend. Non-active workspaces (suspended, limit_reached) now surface that state explicitly so users can self-diagnose. If the API key is configured locally but rejected by the backend, the failure is reported clearly instead of falsely claiming "connected".
+
 ## [2.0.2] — 2026-05-15
 
 ### Fixed

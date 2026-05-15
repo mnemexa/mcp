@@ -65,7 +65,7 @@ specifically so you don't re-derive context from scratch every conversation.
    "give me everything about Z"): call \`brain.recall\` with a higher \`top_k\`
    (e.g. 10–15) and synthesize across the returned memories yourself.
 
-5. **To verify the connection:** \`brain.status\` returns the workspace ID and health.
+5. **To verify the connection:** \`brain.status\` returns the workspace name, current status, plan, and API key prefix — call this if a user asks "are you connected to Mnemexa?" or you suspect setup issues.
 
 ### Do NOT save
 - Greetings, small talk, transient debugging output
