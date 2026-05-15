@@ -3,7 +3,6 @@ import { BizXClient } from "./client.js";
 import { formatError } from "./errors.js";
 import { remember, rememberTool } from "./tools/remember.js";
 import { recall, recallTool } from "./tools/recall.js";
-import { answer, answerTool } from "./tools/answer.js";
 import { health, healthTool } from "./tools/health.js";
 import { status, statusTool } from "./tools/status.js";
 import { ADAPTER_VERSION } from "./config.js";
@@ -39,19 +38,6 @@ export function createServer(): McpServer {
     },
     async ({ query, top_k }) => {
       return handleToolCall(() => recall(client, { query, top_k }));
-    }
-  );
-
-  // brain.answer
-  server.tool(
-    answerTool.name,
-    answerTool.description,
-    {
-      query: z.string().max(2000).describe("The question to answer (max 2,000 characters)"),
-      top_k: z.number().min(1).max(15).default(8).optional().describe("Number of memories to consider (default: 8, max: 15)"),
-    },
-    async ({ query, top_k }) => {
-      return handleToolCall(() => answer(client, { query, top_k }));
     }
   );
 

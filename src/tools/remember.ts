@@ -31,7 +31,7 @@ export async function remember(
     throw new ValidationError(`content exceeds maximum length of ${MAX_CONTENT_LENGTH} characters`);
   }
 
-  const r = await client.post<StoreResponse>("/v1/memory/store", { content });
+  const r = await client.post<StoreResponse>("/v1/memory/store", { text: content });
 
   const id = r.memory_id || r.chunk_id || r.id;
   const importance = r.importance;

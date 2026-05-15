@@ -22,8 +22,8 @@ function printConnected(): void {
   process.stderr.write(`  ${green}${bold}\u2714 Connected to Mnemexa${reset}\n\n`);
   process.stderr.write(`  ${dim}Your AI now has access to:${reset}\n\n`);
   process.stderr.write(`    ${green}\u2022${reset} ${cyan}Memory${reset}     ${dim}remember & recall${reset}\n`);
-  process.stderr.write(`    ${green}\u2022${reset} ${cyan}Answers${reset}    ${dim}intelligent reasoning${reset}\n`);
-  process.stderr.write(`    ${green}\u2022${reset} ${cyan}Health${reset}     ${dim}memory monitoring${reset}\n\n`);
+  process.stderr.write(`    ${green}\u2022${reset} ${cyan}Health${reset}     ${dim}memory monitoring${reset}\n`);
+  process.stderr.write(`    ${green}\u2022${reset} ${cyan}Status${reset}     ${dim}workspace diagnostics${reset}\n\n`);
   process.stderr.write(`  ${green}${bold}Ready.${reset} ${dim}Your AI is now smarter.${reset}\n\n`);
 }
 

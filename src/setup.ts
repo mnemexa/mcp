@@ -62,8 +62,8 @@ specifically so you don't re-derive context from scratch every conversation.
    Only after recall returns empty should you ask the user.
 
 4. **For broad / synthesis questions** ("what do we know about X?", "summarize Y",
-   "give me everything about Z"): use \`brain.answer\` instead of \`brain.recall\` —
-   it reasons across multiple memories.
+   "give me everything about Z"): call \`brain.recall\` with a higher \`top_k\`
+   (e.g. 10–15) and synthesize across the returned memories yourself.
 
 5. **To verify the connection:** \`brain.status\` returns the workspace ID and health.
 

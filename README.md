@@ -58,7 +58,7 @@ Every time you start a new conversation with your AI:
 
 <h2>What This Is</h2>
 
-Mnemexa is a **memory operating system for AI agents**. This package is the MCP adapter — it connects any MCP-compatible IDE or agent runtime to Mnemexa's cloud memory engine via five tool calls your AI uses automatically.
+Mnemexa is the **Intelligent Memory OS for AI**. This package is the MCP adapter — it connects any MCP-compatible IDE or agent runtime to Mnemexa's cloud memory engine via four tool calls your AI uses automatically.
 
 Once installed, your AI agent:
 
@@ -515,7 +515,7 @@ Then trigger a real tool call *through an OpenClaw agent* — e.g. ask the agent
 
 The installer injects memory-use instructions automatically for most tools. But the single most impactful thing you can do is add one line to your agent's system prompt or rules file:
 
-> *Use Mnemexa as your memory layer — store important decisions, preferences, and context as you learn them, and retrieve relevant memory at the start of every conversation. Everything else is handled automatically.*
+> *Use Mnemexa as your persistent memory — store important decisions, preferences, and context as you learn them, and retrieve relevant memory at the start of every conversation. Everything else is handled automatically.*
 
 That's it. Your agent now has fully intelligent, self-managing memory.
 
@@ -690,7 +690,7 @@ Confirm all agents in `~/.openclaw/openclaw.json` use the same `MNEMEXA_API_KEY`
   <a href="https://app.mnemexa.com">Dashboard</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://mnemexa.com">Website</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://docs.mnemexa.com">Docs</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://www.npmjs.com/package/@mnemexa/mcp">npm</a>
 </p>
 
-<sub>Built by <a href="https://mnemexa.com">Mnemexa</a> — The Memory Operating System for AI Agents</sub>
+<sub>Built by <a href="https://mnemexa.com">Mnemexa</a> — The Intelligent Memory OS for AI</sub>
 
 <br/><br/>
 
