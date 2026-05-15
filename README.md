@@ -159,7 +159,7 @@ Your AI gets these capabilities out of the box:
 | `brain.remember` | Save important information — auto-scored for importance, deduplicated, categorized |
 | `brain.recall` | Semantic search over your memory store — returns ranked, scored results |
 | `brain.health` | Memory quality report — health score, total count, stale signals |
-| `brain.status` | Live connection check — confirms the workspace is reachable |
+| `brain.status` | Live connection check — reports the workspace name, current status, plan, and API key prefix |
 
 <br/>
 
